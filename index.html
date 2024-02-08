@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar CURP</title>
+
+</head>
+
+<body>
+    <!--Formulario de validacion de curp-->
+    <form>
+        <label for="curp">CURP:</label>
+        <input type="text" id="curp" name="curp" title="Por favor ingresa una CURP válida" required>
+        <button type="button" onclick="validarCurp()">Validar CURP</button>
+        <!--fin del input de curp-->
+        <!--Inicio de input de rfc-->
+        <label for="rfc">RFC:</label>
+        <input type="text" id="rfc" name="rfc" title="Por favor ingresa un RFC válido" required>
+        <button type="button" onclick="validarRFC()">Validar RFC</button>
+        <!--Fin del input-->
+        <!--Input de email-->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" title="Por favor ingresa un correo electrónico válido" required>
+        <button type="button" onclick="validarEmail()">Validar Email</button>
+        <!--final del input-->
+        <br><br>
+        <!--Inicio del input del telefono-->
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono"
+            title="Por favor ingresa un número de teléfono válido (10 dígitos)" required>
+        <button type="button" onclick="validarTelefono()">Validar Teléfono</button>
+        <!--final del imput-->
+        <!--input de NSS-->
+        <label for="nss">NSS:</label>
+        <input type="text" id="nss" name="nss" title="Por favor ingresa un NSS válido (11 dígitos)" required>
+        <button type="button" onclick="validarNSS()">Validar NSS</button>
+        <!--final del input-->
+    </form>
+
+    <div id="resultado"></div>
+
+</body>
+<script src="./js/script.js"></script>
+<script src="./js/script2.js"></script>
+<script src="./js/script3.js"></script>
+<script src="./js/script4.js"></script>
+
+</html>
